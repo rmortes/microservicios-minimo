@@ -41,3 +41,14 @@ En esta demo se presenta el siguiente escenario: Un servidor central (`gateway`)
 Si todo va bien, el servidor entonces le pide a la base de datos de coches que abra una transacción de compra. Con la transacción abierta y conociendo el precio que tiene que cobrar, el servidor solicita a la pasarela de pago que le confirme la transferencia. Cuando se confirma la transferencia, el servidor le confirma la transacción a la base de datos de coches.
 
 Pero este proceso puede ir mal, y pueden haber errores por el camino que se tratan en el código.
+
+## Restaurar las bases de datos
+A menos que la líe, las bases de datos en el repositorio deberían de ser congruentes. Por lo tanto, si por algún motivo durante las pruebas, se rompen las bases de datos, siempre puedes restaurarlas al último commit con
+```bash
+git restore bd-2.json bd-1.json
+```
+
+O restaurarlas al estado que tienen en master con
+```bash
+git checkout origin/master -- bd-2.json bd-1.json
+```
