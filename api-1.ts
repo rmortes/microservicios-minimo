@@ -14,7 +14,7 @@ const app = express();
 const port = 3002;
 
 app.get('/solicitar', (req, res) => {
-  // Extrae los parámetros cuenta y dinero de la request (?cuenta=xxx&dinero=123)
+  // Extrae el parametro de la request
   const { matricula } = req.query;
 
   // Asegura que los parámetros se envíen
@@ -50,7 +50,7 @@ app.get('/solicitar', (req, res) => {
 })
 
 app.get('/confirmar', (req, res) => {
-  // Extrae los parámetros cuenta y dinero de la request (?cuenta=xxx&dinero=123)
+  // Extrae el parametro de la request
   const { transaccion } = req.query;
 
   // Asegura que los parámetros se envíen
@@ -85,7 +85,7 @@ app.get('/confirmar', (req, res) => {
 })
 
 app.get('/cancelar', (req, res) => {
-  // Extrae los parámetros cuenta y dinero de la request (?cuenta=xxx&dinero=123)
+  // Extrae el parametro de la request
   const { transaccion } = req.query;
 
   // Asegura que los parámetros se envíen
