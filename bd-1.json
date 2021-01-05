@@ -3,6 +3,10 @@
     "AA0001": {
       "nombre": "Ford Fiesta",
       "precio": 12
+    },
+    "AA0002": {
+      "nombre": "Seat Toledo",
+      "precio": 6
     }
   },
   "transacciones": {
