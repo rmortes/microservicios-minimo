@@ -11,7 +11,7 @@ import bd from "./bd-1.json";
 import { Coche, Transacción } from "./types";
 
 const app = express();
-const port = 3002;
+const port = 3001;
 
 app.get('/solicitar', (req, res) => {
   // Extrae el parametro de la request

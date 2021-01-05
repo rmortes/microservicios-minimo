@@ -9,7 +9,7 @@ import bd from "./bd-2.json";
 import { Usuario } from "./types";
 
 const app = express();
-const port = 3001;
+const port = 3002;
 
 app.get('/cobrar', (req, res) => {
   // Extrae los parámetros cuenta y dinero de la request (?cuenta=xxx&dinero=123)
