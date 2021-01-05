@@ -1,0 +1,8 @@
+{
+  "usuarios": {
+      "0001": {
+          "nombre": "Raúl Mortes",
+          "dinero": 10
+      }
+  }
+}
