@@ -8,7 +8,7 @@ Esta API se encarga de administrar una base de datos de coches.
 import express from "express";
 import fs from "fs";
 import bd from "./bd-1.json";
-import { Coche, Transacción } from "./types"
+import { Coche, Transacción } from "./types";
 
 const app = express();
 const port = 3002;

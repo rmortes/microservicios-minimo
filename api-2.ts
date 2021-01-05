@@ -6,7 +6,7 @@ Esta API se encarga de administrar un banco
 import express from "express";
 import fs from "fs";
 import bd from "./bd-2.json";
-import { Usuario } from "./types"
+import { Usuario } from "./types";
 
 const app = express();
 const port = 3001;
@@ -14,7 +14,6 @@ const port = 3001;
 app.get('/cobrar', (req, res) => {
   // Extrae los parámetros cuenta y dinero de la request (?cuenta=xxx&dinero=123)
   const { cuenta, dinero } = req.query;
-  console.log(cuenta,dinero)
 
   // Asegura que los parámetros se envíen
   if (Object.is(cuenta, undefined) || Object.is(dinero, undefined)) {
