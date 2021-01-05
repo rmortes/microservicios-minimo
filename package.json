@@ -2,11 +2,8 @@
   "name": "microservicios-minimo",
   "scripts": {
     "gateway": "tsc && node dist/gateway.js",
-    "gateway-auto": "tsc && node dist/gateway.js --auto",
     "api-1": "tsc && node dist/api-1.js",
-    "api-1-auto": "tsc && node dist/api-1.js --auto",
     "api-2": "tsc && node dist/api-2.js",
-    "api-2-auto": "tsc && node dist/api-2.js --auto"
   },
   "dependencies": {
     "@types/express": "^4.17.9",
