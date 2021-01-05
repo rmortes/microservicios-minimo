@@ -46,6 +46,7 @@ app.get('/solicitar', (req, res) => {
   res.send(JSON.stringify({
     id,
     ...transaccion,
+    coche,
   }));
 })
 
