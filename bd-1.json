@@ -1,0 +1,11 @@
+{
+  "coches": {
+    "AA0001": {
+      "nombre": "Ford Fiesta",
+      "precio": 12
+    }
+  },
+  "transacciones": {
+    
+  }
+}
