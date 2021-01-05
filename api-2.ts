@@ -18,7 +18,7 @@ app.get('/cobrar', (req, res) => {
 
   // Asegura que los parámetros se envíen
   if (Object.is(cuenta, undefined) || Object.is(dinero, undefined)) {
-    res.status(400).end('No se han enviado la cuenta y el dienero necesarios');
+    return res.status(400).end('No se han enviado la cuenta y el dienero necesarios');
   }
 
   // Convierte el dinero a Number y busca el usuario
@@ -27,12 +27,12 @@ app.get('/cobrar', (req, res) => {
 
   // Se asegura de que el usuario existe
   if (Object.is(usuario, undefined)) {
-    res.status(404).end('No se encuentra el usuario');
+    return res.status(404).end('No se encuentra el usuario');
   }
 
   // Se asegura de que se puede realizar la transacción
   if (usuario.dinero - dineroNumber < 0) {
-    res.status(403).end('No hay suficiente efectivo');
+    return res.status(403).end('No hay suficiente efectivo');
   }
 
   // Realiza la transacción
