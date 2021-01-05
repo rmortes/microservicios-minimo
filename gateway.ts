@@ -33,6 +33,7 @@ app.get('/comprar', async (req, res) => {
     default: return res.status(transaccion1.status).end(await transaccion1.text());
   }
 
+  // Si no hay errores, convertimos la respuesta en un json
   const t1body = await transaccion1.json();
   const coche = t1body.coche as Coche;
 
