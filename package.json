@@ -3,7 +3,7 @@
   "scripts": {
     "gateway": "tsc && node dist/gateway.js",
     "api-1": "tsc && node dist/api-1.js",
-    "api-2": "tsc && node dist/api-2.js",
+    "api-2": "tsc && node dist/api-2.js"
   },
   "dependencies": {
     "@types/express": "^4.17.9",
